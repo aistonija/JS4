@@ -1,10 +1,8 @@
 /* 
-
 margin : 20px;
 font-size: 20px;
 padding: 10px;
 color: blue;
-
 */
 
 .greenBorder {
@@ -23,7 +21,29 @@ label {
 }
 
 /* 
-
 Pirmiem trim label'iam sukurti klase ir pritaikyti: border: 2px dotted green;
-
 */
+
+#title {
+  border: 2px dotted blue;
+}
+
+#fullName {
+  background-color: yellow;
+}
+
+.redBorder {
+  border: 2px solid red;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-green {
+  background-color: greenyellow;
+}
+
+.redBorder.bg-green {
+  padding: 20px;
+}
