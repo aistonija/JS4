@@ -1,3 +1,20 @@
+table {
+  width: 100%;
+}
+
+th,
+td {
+  width: 25%;
+  padding: 5px;
+}
+
+table,
+th,
+td {
+  border: 2px dotted black;
+  border-collapse: collapse;
+}
+
 .yellow {
   background-color: yellow;
 }
@@ -8,6 +25,18 @@
 
 .red {
   background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
 }
 
 .p-25 {
