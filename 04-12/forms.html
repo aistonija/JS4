@@ -6,5 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formos</title>
   </head>
-  <body></body>
+  <body>
+    <form>
+      <!-- 
+            1. Email;
+            2. Password;
+            3. Color;
+            4. Hidden;
+            5. Number;
+            6. Range;
+
+      -- Kiekvienas Input turi tureti label 
+      -->
+
+      <label for="el-pastas">Iveskite savo el. paštą</label>
+      <input type="email" id="el-pastas" /> <br /><br />
+
+      <label for="password">Sukurkite slaptažodį</label>
+      <input type="password" id="password" /> <br /><br />
+
+      <label for="color">Pasirinkite spalvą</label>
+      <input type="color" id="color" /> <br /><br />
+
+      <label for="hidden">Kažkas paslėptas</label>
+      <input type="hidden" id="hidden" /> <br /><br />
+
+      <label for="number">Įveskite skaičių</label>
+      <input type="number" id="number" /> <br /><br />
+
+      <label for="slide">Paslidinėkime</label>
+      <input type="range" id="slide" /> <br /><br />
+
+      <input type="submit" value="Spausti" />
+
+      <button type="submit">Spausk mane</button>
+    </form>
+  </body>
 </html>
