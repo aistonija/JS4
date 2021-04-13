@@ -9,7 +9,7 @@
     <style>
       h4 {
         padding: 20px;
-        border: 2px solid red;
+        border: 2px red;
       }
     </style>
   </head>
@@ -18,29 +18,32 @@
       Registracija
     </h1>
     <form>
-      <label for="fullName">Įveskite savo vardą ir pavardę:</label>
+      <label class="greenBorder" for="fullName"
+        >Įveskite savo vardą ir pavardę:</label
+      >
       <input type="text" id="fullName" placeholder="pvz. Aiste Zu" />
       <br />
       <br />
       <h4>Pasirinkite vieną variantą:</h4>
-      <label for="horses">Labiau mėgstu jodinėti:</label>
+      <label class="greenBorder" for="horses">Labiau mėgstu jodinėti:</label>
       <input type="radio" id="horses" name="hobbies" />
       <br />
       <br />
-      <label for="cows">Labiau mėgstu melžti karves:</label>
+      <label class="greenBorder" for="cows">Labiau mėgstu melžti karves:</label>
       <input type="radio" id="cows" name="hobbies" />
       <br />
       <br />
-      <label for="eat">Labiau mėgstu valgyti rūkytą karšį:</label>
+      <label class="red" for="eat">Labiau mėgstu valgyti rūkytą karšį:</label>
       <input type="radio" id="eat" name="hobbies" />
       <br />
       <br />
-      <label for="allAnimals">
+      <label class="red" for="allAnimals">
         <img
           src="https://mutts.com/wp-content/uploads/2018/10/2018-10-04-WorldAnimalDay.jpg"
           alt=""
           width="100"
         />
+        All Animals
       </label>
       <input type="radio" id="allAnimals" name="hobbies" />
     </form>

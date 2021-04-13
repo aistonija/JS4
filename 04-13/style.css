@@ -7,9 +7,23 @@ color: blue;
 
 */
 
+.greenBorder {
+  color: green;
+}
+
 label {
   margin: 20px;
   font-size: 20px;
   padding: 10px;
   color: blue;
 }
+
+.red {
+  color: red;
+}
+
+/* 
+
+Pirmiem trim label'iam sukurti klase ir pritaikyti: border: 2px dotted green;
+
+*/
