@@ -70,3 +70,11 @@ td {
 tr:last-child td:hover {
   background-color: red;
 }
+
+.parentElement .firstChild {
+  border: 2px solid black;
+}
+
+.firstChild {
+  border: 2px solid red;
+}
