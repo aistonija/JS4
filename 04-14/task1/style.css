@@ -1,0 +1,17 @@
+.parentElement {
+  height: 500px;
+  background-color: lightgreen;
+  text-align: center;
+}
+
+.childElement {
+  border: 1px solid orangered;
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 30%;
+}
+
+.childElement img {
+  object-fit: cover;
+  width: 100%;
+}

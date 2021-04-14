@@ -1,18 +1,51 @@
-.parentElement {
-  width: 100%;
-  height: 500px;
-  background-color: lightgreen;
+body {
   text-align: center;
 }
 
-.childElement {
-  border: 1px solid orangered;
-  margin-bottom: 10px;
-  display: inline-block;
-  width: 30%;
+.box {
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  background-color: lightpink;
+  border: 3px solid black;
+  /* trumpoji sintakse - is visu pusiu vienodai */
+  padding: 10px;
+
+  /* ilgoji sintakse - paddingai is visu pusiu skirtingi */
+  padding: 20px 0 50px 10px;
+
+  /* trumpoji - virsus su apacia vienodi, ir kaire su desine vienodi */
+  padding: 10px 20px;
+
+  padding-top: 50px;
+
+  /* padarys isorinius tarpus is visu pusiu */
+  margin: 20px;
+
+  /* perrasiau visas 4 puses */
+  /* margin: 0 auto; */
 }
 
-.childElement img {
-  object-fit: cover;
-  width: 100%;
+.paragraph {
+  border: 2px solid yellowgreen;
+  width: 70%;
+  /* margin: 0 auto; */
+  padding: 10px;
+  /* text-align: center; */
+}
+
+.div {
+  height: 150px;
+  background-color: yellowgreen;
+  width: 200px;
+  border: 3px solid black;
+  margin: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 40px;
+}
+
+.mt-20 {
+  margin-top: 40px;
 }
