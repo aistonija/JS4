@@ -1,0 +1,25 @@
+BOXES task
+
+1. sukurkite parent div, kuriam duota 3rem padding, ir jis turi kokia nors background spalva;
+
+2. parent div'e sukurkite 6 vaikus div'us. Kiekvienas is ju turi tureti child klase, ir child{kelintas vaiaks}, pvz. child1, child2 ir t.t.
+
+3. visi vaikiniai div'ai turi bendrus nustatymus:
+    - turi buti vienoje eileje;
+    - 100x100 dydzio;
+    - fono spalva, kad issiskirtu is tevinio elemento;
+    - 3px borderis;
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+4. kiekvienam is vaiku priskirti tokias savybes, naudojantis spacing.css ar prirasant nauja trukstama stiliu :))
+
+    - child1 --> m-2;
+    - child2 --> p-2;
+    - child3 --> px-2 mx-2;
+    - child4 --> py-2 my-2;
+    - child5 --> m-auto;
+    - child6 --> p-3 ir border-box;
+    - child7 --> nuotrauka
+
