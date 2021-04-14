@@ -1,6 +1,32 @@
-.circle {
-  background-color: lime;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+body {
+  background-color: #eee;
+}
+
+header {
+  background-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgb(223, 223, 223);
+}
+
+.logo-container {
+  height: 50px;
+}
+
+.logo-container > img {
+  object-fit: cover;
+  height: 100%;
+}
+
+header nav a {
+  color: black;
+  text-decoration: none;
+}
+
+header nav a:not(:last-child) {
+  margin-right: 20px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
 }
