@@ -1,0 +1,23 @@
+.div {
+  background-color: yellowgreen;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 50px;
+  left: 100px;
+  z-index: -1;
+}
+
+.absolute {
+  background-color: pink;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 300px;
+  z-index: -2;
+}
+
+p {
+  position: relative;
+  z-index: -3;
+}

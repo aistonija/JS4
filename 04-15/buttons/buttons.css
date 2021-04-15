@@ -56,6 +56,10 @@ section {
   );
 }
 
-.btn--red:active {
-  background-color: yellowgreen;
+.btn:active {
+  background-color: rgb(0, 255, 242);
+}
+
+.btn:active {
+  color: yellow;
 }
