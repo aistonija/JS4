@@ -68,5 +68,7 @@ footer {
 
 .product img {
   object-fit: cover;
+  object-position: 70% 50%;
   width: 200px;
+  height: 500px;
 }
