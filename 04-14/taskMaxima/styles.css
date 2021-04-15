@@ -2,11 +2,15 @@ body {
   background-color: #eee;
 }
 
-header {
+.wrapper {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.general-styles {
   background-color: #fff;
-  border-radius: 15px;
-  text-align: center;
   box-shadow: 0 2px 4px rgb(223, 223, 223);
+  border-radius: 15px;
 }
 
 .logo-container {
@@ -29,4 +33,40 @@ header nav a:not(:last-child) {
 
 header nav a:hover {
   text-decoration: underline;
+}
+
+/* ABOUT SECTION STYLES */
+
+#about {
+  box-sizing: border-box;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.about-img-wrapper img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* .about-text-wrapper p {
+  text-align: justify;
+} */
+
+header,
+main,
+footer {
+  text-align: center;
+}
+
+.about-text-wrapper:not(p) {
+  text-align: justify;
+}
+
+/* PRODUCTS STYLES */
+
+.product img {
+  object-fit: cover;
+  width: 200px;
 }

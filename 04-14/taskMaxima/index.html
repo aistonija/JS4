@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="spacing.css" />
   </head>
   <body>
-    <header class="m-1 py-2">
+    <!-- HEADER SECTION -->
+    <header class="py-2 wrapper general-styles">
       <div class="logo-container">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Maxima_logo.svg/1280px-Maxima_logo.svg.png"
@@ -18,16 +25,74 @@
       </div>
       <h1 class="title">Maxima Group</h1>
       <nav>
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <a href="#">About</a>
         <a href="#">Products</a>
         <a href="#">Link</a>
       </nav>
     </header>
+
+    <header>
+      <div class="container">
+        <!-- turinys -->
+      </div>
+    </header>
+    <!-- MAIN CONTENT -->
     <main>
-      <section></section>
-      <section></section>
-      <section></section>
+      <!-- ABOUT SECTION -->
+      <section id="about" class="wrapper general-styles p-2">
+        <h2 class="section-title">About</h2>
+
+        <div class="about-img-wrapper">
+          <img src="hands-together-1.png" alt="" />
+        </div>
+
+        <div class="about-text-wrapper">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            totam modi labore porro possimus amet veniam neque tempore, quos,
+            expedita aperiam aliquid nobis illum. Beatae, error harum
+            consectetur eaque exercitationem excepturi in facilis labore
+            quibusdam nisi totam optio aut commodi facere iusto. Debitis commodi
+            soluta quo doloremque. Non, vel autem?
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+            minus, repellendus qui maiores dolorem, eum distinctio accusantium,
+            iure quam ea consequatur. Error nemo aperiam odit dolor commodi,
+            aliquam voluptas fugit facilis assumenda! Eveniet iusto dolore
+            tempora eum minima nulla, explicabo illo consectetur culpa quia
+            velit praesentium. Laborum minus tempore eaque.
+          </p>
+        </div>
+      </section>
+      <!-- Products Section -->
+      <section id="products" class="wrapper general-styles">
+        <h2 class="section-title pt-2 mt-0">Products</h2>
+        <h3>Pieno produktai</h3>
+        <div class="product">
+          <img src="pienas.png" alt="" />
+          <h4 class="mb-0">Pienas</h4>
+          <p class="mt-0">Kaina: <b>&euro;1</b></p>
+        </div>
+        <div class="product">
+          <img src="pienas.png" alt="" />
+          <h4>Pienas</h4>
+          <p class="mb-0">Kaina: <b>&euro;1</b></p>
+        </div>
+      </section>
+      <!-- Contacts Section -->
+      <section id="contact" class="wrapper general-styles pb-1">
+        <h2 class="mt-0 pt-1">Contacts</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.219602278376!2d25.33569661589081!3d54.72335198029069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd96e7d814e149%3A0xdd7887e198efd4c7!2sSaul%C4%97tekio%20al.%2015%2C%20Vilnius%2010224!5e0!3m2!1slt!2slt!4v1618469614366!5m2!1slt!2slt"
+          width="100%"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
     </main>
     <footer>
       <!-- copyright -->

@@ -9,6 +9,7 @@
   border: 3px solid black;
   color: white;
   text-align: center;
+  vertical-align: top;
 }
 
 .child1 {
