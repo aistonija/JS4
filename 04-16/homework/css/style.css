@@ -1,0 +1,110 @@
+body {
+  background-image: url("../img/cover-hero.jpg");
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  height: 100vh;
+}
+
+header {
+  height: 60px;
+  background-color: rgb(12, 12, 12);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.logo {
+  height: 60px;
+  display: inline-block;
+  padding: 10px 0;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.logo img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.text-right {
+  height: 100%;
+  width: 70%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 7px;
+  position: relative;
+}
+
+nav {
+  display: inline-block;
+  height: 100%;
+  width: 600px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:not(:last-child) {
+  margin-right: 35px;
+}
+
+/* main content - text & buttons */
+
+.text-content {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+}
+
+.text-content h1 {
+  font-size: 4em;
+  font-style: italic;
+  color: rgb(78, 74, 33);
+  font-weight: 800;
+}
+
+/* buttons */
+
+.buttons button {
+  display: inline-block;
+  border: 1px solid #555;
+  padding: 12px 24px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px 1px #5555;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.btn-yellow {
+  background-image: linear-gradient(to bottom, #e6b004, #bb9414);
+}
+
+.btn-yellow:hover {
+  background-image: linear-gradient(to top, #e6b004, #bb9414);
+}
+
+.btn-grey {
+  background-image: linear-gradient(to bottom, #9f9ca3, #575c69);
+}
+
+.btn-grey:hover {
+  background-image: linear-gradient(to top, #9f9ca3, #575c69);
+}
+
+/* pencils img */
+img.pencils {
+  width: 700px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
