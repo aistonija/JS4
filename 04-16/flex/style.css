@@ -1,0 +1,89 @@
+.parent {
+  background-color: lightsalmon;
+  margin: 50px;
+  display: flex;
+  padding: 50px;
+}
+
+.parent1 {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lg-box {
+  width: 150px;
+  height: 150px;
+  border: 1px solid red;
+}
+
+.sm-box {
+  border: 1px solid white;
+  width: 20px;
+  height: 20px;
+}
+
+.long-box {
+  width: 80%;
+  height: 20px;
+  border: 1px solid white;
+}
+
+.black-box {
+  background-color: black;
+}
+
+.parent2 {
+  justify-content: center;
+}
+
+.skye-box {
+  background-color: skyblue;
+}
+
+.parent3 {
+  justify-content: space-between;
+}
+
+.purple-box {
+  background-color: slateblue;
+  display: flex;
+}
+
+.purple1 {
+  justify-content: center;
+  align-items: center;
+}
+
+.purple2 {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.blue-box {
+  background-color: blue;
+}
+
+.green-box {
+  background-color: green;
+}
+
+.parent4 {
+  justify-content: space-around;
+}
+
+.white-box {
+  background-color: white;
+  display: flex;
+}
+
+.white1 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.white2,
+.white3 {
+  justify-content: center;
+  align-items: center;
+}
