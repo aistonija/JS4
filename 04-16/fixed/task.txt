@@ -1,0 +1,9 @@
+
+
+1. section/container width: 600px; m: 0 auto;
+2. 4 div/articlesu h2 pavadinimu + ilgas tekstas = lorem250
+3. div - padaryti apvalu, dydis 50x50, bg-color
+4. to div'o viduje - simbolis (span/p/h1 - h6)
+5. relative/absolute isscentruoti simboli viduje
+
+6. 
