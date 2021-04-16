@@ -5,5 +5,25 @@
 3. div - padaryti apvalu, dydis 50x50, bg-color
 4. to div'o viduje - simbolis (span/p/h1 - h6)
 5. relative/absolute isscentruoti simboli viduje
+6. div'e position is relative pakeiciame fixed ir duodame bottom: 20px; right: 20px;
 
-6. 
+-- sticky task -- 
+
+1. kiekvienam heading duodame klases:
+heading ir heading(kelintas headingas), pvz heading1 heading2 ir t.t.
+
+2. heading klaseje aprasome vienodus stilius:
+
+ryski bg-color;
+width 50%;
+m: auto;
+text-aling: center
+line-height: 2;
+position: sticky
+
+3. Kiekvienai heading individualiai klasei (pvz. heading1) duodame pozicija top: pirmas elementas 50px;
+antras elementas 100px;
+trecias elementas 150px;
+4 elementas 200px
+
+

@@ -25,3 +25,29 @@ section p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.heading {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: royalblue;
+  line-height: 2;
+  color: white;
+  position: sticky;
+}
+
+.heading1 {
+  top: 50px;
+}
+
+.heading2 {
+  top: 100px;
+}
+
+.heading3 {
+  top: 150px;
+}
+
+.heading4 {
+  top: 200px;
+}
