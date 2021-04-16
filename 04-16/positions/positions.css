@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 1000px;
+  background-color: cornsilk;
+}
+
+header {
+  width: 1000px;
+  background-color: burlywood;
+  margin: 0 auto;
+}
+
+main {
+  background-color: darkcyan;
+  position: relative;
+}
+
+.div {
+  background-color: aquamarine;
+  height: 200px;
+  width: 200px;
+  padding: 5px;
+  border: 3px solid black;
+  display: inline-block;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  display: inline-block;
+  border: 3px solid black;
+}
+
+.small {
+  width: 50px;
+  height: 50px;
+  background-color: darkgoldenrod;
+  position: absolute;
+  bottom: 20px;
+}
