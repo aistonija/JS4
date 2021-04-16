@@ -1,0 +1,43 @@
+/* BOXES RELATIVE TASK */
+
+section {
+  width: 1000px;
+  height: 1000px;
+  background-color: darkgreen;
+  margin: 0 auto;
+}
+
+.boxes {
+  background-color: darkgrey;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  position: relative;
+}
+
+.box1 {
+  background-color: darkkhaki;
+  top: 50px;
+}
+
+.box2 {
+  background-color: orangered;
+  top: 80px;
+  right: 200px;
+}
+
+.box3 {
+  background-color: orchid;
+  bottom: 50px;
+}
+
+.box4 {
+  background-color: palegreen;
+  bottom: 100px;
+  left: 500px;
+}
+
+.box5 {
+  background-color: peachpuff;
+  right: 1000px;
+}
