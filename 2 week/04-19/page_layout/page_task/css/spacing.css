@@ -1,8 +1,4 @@
 /* Margins */
-.m-auto {
-  margin: 0 auto;
-}
-
 .m-0 {
   margin: 0;
 }
@@ -97,6 +93,54 @@
 }
 .ml-3 {
   margin-left: 3rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+.mx-4 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.my-4 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+}
+.mr-4 {
+  margin-right: 4rem;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
+.ml-4 {
+  margin-left: 4rem;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+.mx-5 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.my-5 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.mt-5 {
+  margin-top: 5rem;
+}
+.mr-5 {
+  margin-right: 5rem;
+}
+.mb-5 {
+  margin-bottom: 5rem;
+}
+.ml-5 {
+  margin-left: 5rem;
 }
 
 /* Paddings */
@@ -194,4 +238,52 @@
 }
 .pl-3 {
   padding-left: 3rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+.px-4 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.py-4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.pt-4 {
+  padding-top: 4rem;
+}
+.pr-4 {
+  padding-right: 4rem;
+}
+.pb-4 {
+  padding-bottom: 4rem;
+}
+.pl-4 {
+  padding-left: 4rem;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+.px-5 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.py-5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.pt-5 {
+  padding-top: 5rem;
+}
+.pr-5 {
+  padding-right: 5rem;
+}
+.pb-5 {
+  padding-bottom: 5rem;
+}
+.pl-5 {
+  padding-left: 5rem;
 }

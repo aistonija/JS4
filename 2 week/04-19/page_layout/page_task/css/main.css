@@ -8,6 +8,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  background: #f1f1f1;
+}
+
 p {
   line-height: 1.6rem;
 }
@@ -17,4 +21,15 @@ p {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.container-wide {
+  display: block;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.href-fix {
+  padding-top: 60px;
+  margin-top: -60px;
 }

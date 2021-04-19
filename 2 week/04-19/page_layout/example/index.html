@@ -13,26 +13,79 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="spacing.css" />
+    <link rel="stylesheet" href="carousel.css" />
   </head>
   <body>
-    <header>
-      <div class="navbar">
-        <div class="navbar-wrapper">
-          <span class="logo">LOGO</span>
-          <nav class="links-container">
-            <a href="">Home</a><a href="">About</a><a href="">Community</a
-            ><a href="">Contact Us</a>
-          </nav>
-        </div>
-      </div>
-      <div class="content-block">
-        <h1 class="main-heading">Some Text</h1>
-        <button class="btn">Click</button>
-        <button>Click</button>
-      </div>
-    </header>
     <main>
-      <h2>About</h2>
+      <h1>CSS-only Carousel</h1>
+
+      <p>This carousel is created with HTML and CSS only.</p>
+
+      <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+          <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper snapper--bg1">
+              <a href="#carousel__slide4" class="carousel__prev"
+                >Go to last slide</a
+              >
+              <a href="#carousel__slide2" class="carousel__next"
+                >Go to next slide</a
+              >
+            </div>
+          </li>
+          <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper snapper--bg2"></div>
+            <a href="#carousel__slide1" class="carousel__prev"
+              >Go to previous slide</a
+            >
+            <a href="#carousel__slide3" class="carousel__next"
+              >Go to next slide</a
+            >
+          </li>
+          <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper snapper--bg3"></div>
+            <a href="#carousel__slide2" class="carousel__prev"
+              >Go to previous slide</a
+            >
+            <a href="#carousel__slide4" class="carousel__next"
+              >Go to next slide</a
+            >
+          </li>
+          <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper snapper--bg4"></div>
+            <a href="#carousel__slide3" class="carousel__prev"
+              >Go to previous slide</a
+            >
+            <a href="#carousel__slide1" class="carousel__next"
+              >Go to first slide</a
+            >
+          </li>
+        </ol>
+        <aside class="carousel__navigation">
+          <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide1" class="carousel__navigation-button"
+                >Go to slide 1</a
+              >
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide2" class="carousel__navigation-button"
+                >Go to slide 2</a
+              >
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide3" class="carousel__navigation-button"
+                >Go to slide 3</a
+              >
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide4" class="carousel__navigation-button"
+                >Go to slide 4</a
+              >
+            </li>
+          </ol>
+        </aside>
+      </section>
     </main>
   </body>
 </html>
