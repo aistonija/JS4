@@ -1,0 +1,30 @@
+header {
+  background-color: aquamarine;
+  height: 100vh;
+  width: 100%;
+}
+
+.navbar {
+  height: 100px;
+  background-color: cadetblue;
+}
+
+.navbar-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  background-color: chartreuse;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links-container a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.content-block {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+}
