@@ -74,3 +74,59 @@
   border: 3px solid goldenrod;
   width: 70px;
 }
+
+/* 1st container narrow block styles */
+.bg-yellow {
+  background-color: rgb(255, 187, 85);
+  color: white;
+}
+
+.fa-adn {
+  font-size: 10rem;
+  /* color: white; */
+}
+
+.brand-name,
+.subtitle {
+  text-transform: uppercase;
+}
+
+.brand-name {
+  font-size: 3rem;
+}
+
+.white-line {
+  border-bottom: 3px solid white;
+  width: 100%;
+}
+
+.some-quote {
+  width: 75%;
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.icons {
+  list-style: none;
+  padding: 0;
+  width: 50%;
+}
+
+.icon {
+  display: block;
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.icon {
+  color: rgb(255, 187, 85);
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
