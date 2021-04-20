@@ -40,6 +40,7 @@
   border-radius: 20px;
   padding: 10px 15px;
   border: 1px solid white;
+  cursor: pointer;
 }
 
 /* 1st block */
@@ -120,13 +121,15 @@
   height: 35px;
   width: 35px;
   border-radius: 50%;
-}
-
-.icon {
   color: rgb(255, 187, 85);
   font-size: 1.2rem;
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  background-color: rgb(212, 154, 67);
 }
