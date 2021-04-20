@@ -1,0 +1,25 @@
+Backgrounds task
+
+1. Sukurti 6 blokinius elementus (tinka: section / div / article);
+2. Kiekvienas jų su klasėmis: bg ir bg-(kelintas elementas), pvz bg-1. 
+3. Kiekviename iš jų <h1> su pavadinimais
+    1. bg-color rgba
+    2. bg-color and opacity 0.5
+    3. linear-gradient 
+    4. radial-gradient
+    5. bg-image 
+    6. bg-image
+
+4. styles.css apsirašyti klases. bg klasėje rašome stilius, kurie tinka visiem backgroundam - pvz text-align, box-sizing, margin/padding, shadow, border ir t.t.
+
+5. bg-(kelintas elementas) klasėms pritaikyti atitinkamas savybes:
+
+    1. bg-color: rgba
+    2. bg-color and opacity 0.5
+    3. linear-gradient (your choice)
+    4. radial-gradient (your choice)
+    5. bg-image - image per visą plotį/aukštį
+    6. bg-image - papildomai pritaikyta attachment-fixed.
+    6.1. - sukurtas vidutiniško skaidrumo layer'is (sluoksnis).
+
+    

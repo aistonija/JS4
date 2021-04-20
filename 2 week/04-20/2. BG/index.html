@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Backgrounds</title>
+  </head>
+  <body>
+    <!-- Background color transparency with rgba -->
+    <!-- https://www.w3schools.com/css/css_background.asp -->
+
+    <section class="bg bg-1">
+      <h1>bg-1 - Background color with rgba (transparent):</h1>
+
+      <code> background-color: rgba(127, 255, 212, 0.5);</code>
+    </section>
+
+    <!-- Background color transparency with opacity -->
+    <section class="bg bg-2">
+      <h1>bg 2 - Background color with opacity (transparent):</h1>
+
+      <code> background-color: blueviolet; opacity: 0.5;</code>
+    </section>
+    <!-- Background color - gradient - linear -->
+    <!-- https://www.w3schools.com/css/css3_gradients.asp -->
+    <!-- https://cssgradient.io/ -->
+    <section class="bg bg-3">
+      <h1>bg 3 - Linear Gradient background</h1>
+      <p>
+        <code>
+          background-image: linear-gradient(to right, rgba(255,0,0,0),
+          rgba(255,0,0,1));</code
+        >
+      </p>
+    </section>
+    <!-- Background color - gradient - radial -->
+    <!-- https://www.w3schools.com/css/css3_gradients_radial.asp -->
+    <section class="bg bg-4">
+      <h1>bg 4 - Radial Gradient Background</h1>
+      <p>
+        <code
+          >background: rgb(3,0,189); background: radial-gradient(circle,
+          rgba(3,0,189,0.6418768190870099) 0%, rgba(255,0,211,1) 100%);</code
+        >
+      </p>
+    </section>
+    <!-- Background image -->
+    <section class="bg bg-5">
+      <h1>bg 5 - Background Image</h1>
+      <p>
+        <code>
+          height: 500px; border: 2px solid black; background-image:
+          url("sunset.jpg"); background-repeat: no-repeat; background-size:
+          cover; background-position: center;
+        </code>
+      </p>
+    </section>
+    <!-- Bg-color -->
+    <!-- bg image attachment fixed -->
+    <section class="bg bg-6">
+      <div class="bg-layer">
+        <h1>bg 6 - Background Attachment Fixed</h1>
+        <p>
+          <code
+            >height: 800px; border: 2px solid black; background-image:
+            url("sea.jpg"); background-repeat: no-repeat; background-size:
+            cover; background-position: center; background-attachment:
+            fixed;</code
+          >
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
