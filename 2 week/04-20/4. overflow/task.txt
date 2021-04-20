@@ -1,0 +1,21 @@
+
+    Overflow task
+
+1. Susikurti konteinerį - 600px pločio, išcentruoti per vidurį, duoti ryškų border ir padding: 20px.
+
+2. Jame 3 ilgi paragrafai (lorem200) su klasėmis: 
+1-asis be klasės, 
+2-asis overflow-hidden; 
+3-asis overflow-scroll.
+
+3. style.css visiem paragraph'am duokite 200px aukštį ir 50px išorinį tarpą apačioje, ryškų border.
+
+4. style.css pritaikykite savybes pagal klases: overflow: hidden ir overflow: scroll.
+
+5. bendrame konteineryje sukurti div'ą su klase overflowing ir jame patalpinti nuotrauką:
+
+6. style.css overflowing klasei duoti 500px aukštį, ir pritaikyti overflow savybę, kad neišlystų iš kraštų, bet scrollintųsi ir x ir y ašyje.
+
+
+https://media.npr.org/assets/img/2017/10/12/floating-therapy-1_wide-4600fc88ae039021e19693a4e87ea689e418ae8e.jpg 
+

@@ -1,0 +1,27 @@
+.wrapper {
+  margin: auto;
+  width: 600px;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+p {
+  border: 2px solid blue;
+  padding: 10px;
+  margin-bottom: 50px;
+  height: 200px;
+}
+
+.hidden-overflow {
+  overflow: hidden;
+}
+
+.scroll-overflow {
+  overflow: scroll;
+}
+
+.overflowing {
+  height: 500px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
