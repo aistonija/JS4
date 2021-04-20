@@ -1,0 +1,76 @@
+/* Common Styles */
+
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* .main-block {
+  border: 2px solid hotpink;
+} */
+
+.full-block {
+  border: 2px solid purple;
+}
+
+.main-block,
+.full-block {
+  height: 700px;
+}
+
+.wide-block,
+.narrow-block {
+  height: 100%;
+}
+
+.wide-block {
+  width: 65%;
+  border: 2px solid orangered;
+}
+
+.narrow-block {
+  width: 35%;
+  border: 2px solid olive;
+}
+
+.button-style {
+  color: white;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: 1px solid white;
+}
+
+/* 1st block */
+.water-bg {
+  background-image: url(water.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.water-bg-layer {
+  background-color: rgba(61, 61, 61, 0.5);
+  height: 100%;
+}
+
+.text-content {
+  padding-top: 150px;
+  padding-left: 150px;
+  width: 50%;
+}
+
+.text-content {
+  color: white;
+}
+
+.text-content > h1 {
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.border-line {
+  border: 3px solid goldenrod;
+  width: 70px;
+}
