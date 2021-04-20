@@ -1,0 +1,13 @@
+Visibility task
+
+1. Reikalingi 3 konteineriai max 300x300 dydzio. Kiekviename jų nuotrauka, ir uzdetas ryskus borderis. 
+
+2. 1-asis nekeiciamas.
+   2-asis pritaikyti: visibility: hidden;
+   3-asis pritaikyti: display: none;
+
+-----------------------------------------
+
+3.  1. Konteineris, kuriame yra nuotrauka. 
+    2. Uzdetas skaidrus layer. 
+    3. Uzvedus pelyte turi atsirasti tekstas - iscentruotas. 
