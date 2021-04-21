@@ -321,6 +321,12 @@ li::before {
 
 .event-name {
   width: 65%;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.event-name > h3 {
+  margin: 5px 0;
 }
 
 .event-time {
@@ -330,8 +336,44 @@ li::before {
 
 .table-button {
   background-color: white;
-  width: 180px;
+  width: 160px;
   color: black;
   text-transform: uppercase;
   font-weight: 600;
+  margin-right: 20px;
+  transition: 0.3s;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.table-button:hover {
+  background-color: rgb(255, 187, 84);
+  color: white;
+  border: 1px solid rgb(255, 187, 84);
+}
+
+.text-red {
+  color: rgb(243, 64, 64);
+}
+
+.text-cherry {
+  color: rgb(141, 27, 27);
+}
+
+.text-yellow {
+  color: rgb(255, 187, 84);
+}
+
+.event-name > small {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.event-time {
+  font-weight: 200;
+  color: rgb(53, 53, 53);
+}
+
+.event-time > span:last-child {
+  text-transform: capitalize;
 }
