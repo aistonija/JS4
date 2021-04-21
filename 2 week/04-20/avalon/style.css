@@ -268,6 +268,11 @@ li::before {
   text-align: center;
   width: 200px;
   padding: 25px 0;
+  transition: 0.3s;
+}
+
+.nav-el:hover {
+  color: rgb(212, 154, 67);
 }
 
 .table {
@@ -275,4 +280,29 @@ li::before {
   background-color: white;
   height: 600px;
   width: 90%;
+}
+
+.row {
+  background-color: gray;
+  margin-bottom: 5px;
+  height: 20%;
+  padding: 10px;
+}
+.row:nth-child(even) {
+  background-color: rgb(211, 211, 211);
+}
+
+.row:nth-child(odd) {
+  background-color: rgb(233, 233, 233);
+}
+
+.date-box {
+}
+
+.table-button {
+  background-color: white;
+  width: 180px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
 }
