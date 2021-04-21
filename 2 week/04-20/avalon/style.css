@@ -16,7 +16,7 @@
 
 .main-block,
 .full-block {
-  height: 700px;
+  height: 600px;
 }
 
 .wide-block,
@@ -41,6 +41,12 @@
   padding: 10px 15px;
   border: 1px solid white;
   cursor: pointer;
+  width: 135px;
+}
+
+.bg-layer {
+  background-color: rgba(61, 61, 61, 0.5);
+  height: 100%;
 }
 
 /* 1st block */
@@ -51,18 +57,14 @@
   background-position-y: center;
 }
 
-.water-bg-layer {
-  background-color: rgba(61, 61, 61, 0.5);
-  height: 100%;
-}
-
 .text-content {
   padding-top: 150px;
   padding-left: 150px;
   width: 50%;
 }
 
-.text-content {
+.text-content,
+.offer {
   color: white;
 }
 
@@ -88,7 +90,8 @@
 }
 
 .brand-name,
-.subtitle {
+.subtitle,
+.offer {
   text-transform: uppercase;
 }
 
@@ -132,4 +135,105 @@
 
 .icon:hover {
   background-color: rgb(212, 154, 67);
+}
+
+/* 2nd block styles */
+
+.bg-envelope {
+  background-image: url(green_envelopes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.bg-layer-red {
+  height: 100%;
+  background-color: rgba(161, 57, 57, 0.9);
+}
+
+.mail-icon {
+  color: white;
+  border: 1px solid white;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.fa-cat {
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.offer {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.bg-grey {
+  background-color: rgb(224, 224, 224);
+}
+
+.theme-text,
+.left-image {
+  width: 50%;
+}
+
+/* 2nd block image */
+
+.lantern-container {
+  width: 50%;
+  height: 70%;
+}
+
+.lantern-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bg-browny-red {
+  background-color: rgb(161, 57, 57);
+  border: 1px solid rgb(161, 57, 57);
+}
+
+.theme-title {
+  font-weight: 200;
+  font-size: 1.9rem;
+  margin: 0;
+}
+
+.theme-subtitle {
+  color: rgb(161, 57, 57);
+  margin-top: 5px;
+  font-size: 2rem;
+}
+
+.red-text {
+  color: rgb(161, 57, 57);
+}
+
+.theme-paragraph {
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.theme-text ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.theme-text ul > li {
+  line-height: 1.5;
+  font-style: italic;
+  color: gray;
+  font-size: 14px;
+}
+
+li::before {
+  content: "+ ";
 }
