@@ -1,0 +1,34 @@
+/*
+  primary - #e6b004
+  primary dark - #bb9414
+  secondary - #9f9ca3
+  secondary dark - #575c69
+  default - #ac732c
+  black - #433726
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f1f1f1;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: block;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-wide {
+  display: block;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

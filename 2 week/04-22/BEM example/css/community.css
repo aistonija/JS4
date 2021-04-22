@@ -1,0 +1,56 @@
+#community {
+  background-image: linear-gradient(to top, #9f9ca3, #f1f1f1);
+}
+
+.members-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.member-card {
+  width: 300px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.member-card__img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.member-card__name {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.member-card__role {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  color: #e6b004;
+  letter-spacing: 0.1rem;
+  text-shadow: 1px 1px 3px #000, -1px -1px 3px #000;
+}
+
+.icon-container {
+  display: inline-block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 1px solid #000;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-container--fb:hover {
+  background: #38529a;
+}
+
+.icon-container--in:hover {
+  background: #0073b1;
+}
+
+.icon {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+}

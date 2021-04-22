@@ -1,0 +1,13 @@
+.about__img {
+  display: inline-block;
+  width: 600px;
+  box-shadow: 6px 10px 10px #0003, -6px 10px 10px #0003;
+}
+
+.about__side-content {
+  width: 800px;
+}
+
+#about p {
+  text-align: justify;
+}

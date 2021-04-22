@@ -1,0 +1,32 @@
+.hero {
+  background: url(../img/cover-hero.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding-top: 60px;
+  position: relative;
+}
+
+.hero__content {
+  position: absolute;
+  top: 28vh;
+  right: 15vw;
+}
+
+.hero__content__header {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  text-shadow: 1px 1px 0 #dbc77f, -1px -1px 0 #dbc77f;
+  color: #584603;
+}
+
+.hero__content__buttons {
+  position: relative;
+  z-index: 5;
+}
+
+.hero__content__buttons>.btn:first-of-type {
+  margin-right: 1.5rem;
+}
