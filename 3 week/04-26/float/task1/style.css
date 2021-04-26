@@ -1,0 +1,51 @@
+.text-center {
+  text-align: center;
+}
+
+.img-task {
+  width: 500px;
+}
+
+.task-1 {
+  background-color: tomato;
+  display: block;
+  margin: 5rem auto;
+  width: calc(300px + 2rem);
+  height: calc(300px + 2rem);
+}
+
+.rect {
+  background: blueviolet;
+}
+
+.rect-square {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+.rect-v {
+  height: calc(200px + 1rem);
+  width: 100px;
+}
+
+.rect-h {
+  height: 100px;
+  width: calc(200px + 1rem);
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}

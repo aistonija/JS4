@@ -1,0 +1,18 @@
+susikurti bloka su tokiais parametrais: 
+margin: 5rem auto;
+plotis: 300px + 2rem
+aukstis: 300px + 2rem;
+
+susikurti klase .rect duodam rysku background
+
+susikurti klase .rect-square - dydis 100x100
+
+susikurti klase .rect-v, aukstis 200px + 1rem
+plotis: 100px;
+
+susikurti klase .rect-h, aukstis 100px, plotis: 200px + 1rem
+
+klase float-left ir klase float-right, pagal tai pridedamos savybes
+
+mb-1, mr-1 : 1rem
+
