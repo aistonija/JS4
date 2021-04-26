@@ -14,6 +14,14 @@
   height: calc(300px + 2rem);
 }
 
+.task-2 {
+  display: block;
+  background-color: tomato;
+  margin: 5rem auto;
+  width: calc(400px + 3rem);
+  height: calc(400px + 3rem);
+}
+
 .rect {
   background: blueviolet;
 }
