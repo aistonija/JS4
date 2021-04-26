@@ -46,5 +46,28 @@
         </div>
       </div>
     </section>
+    <button id="change" style="cursor: pointer">Display</button>
+    <div class="js-photo border" style="padding: 10px">
+      <img
+        id="photo"
+        src="https://cdn1.matadornetwork.com/blogs/1/2011/05/greece-1200x853.jpg"
+        alt=""
+      />
+    </div>
+
+    <script>
+      const button = document.getElementById("change");
+
+      button.addEventListener("click", myScript);
+      function myScript() {
+        const img = document.getElementById("photo");
+
+        if (img.style.display === "none") {
+          img.style.display = "block";
+        } else {
+          img.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>

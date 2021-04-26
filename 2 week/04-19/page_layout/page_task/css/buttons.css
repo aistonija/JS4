@@ -11,6 +11,10 @@
   background: #555;
 }
 
+.btn:active {
+  color: red;
+}
+
 .btn:hover {
   color: #d5d5d5;
   box-shadow: 0 3px 8px 3px #5555;
