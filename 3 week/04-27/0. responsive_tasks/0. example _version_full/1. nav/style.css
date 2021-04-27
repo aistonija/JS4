@@ -1,0 +1,73 @@
+header {
+  background-color: green;
+  padding: 10px;
+}
+
+.logo {
+  background-color: honeydew;
+  text-align: center;
+  padding: 10px;
+}
+
+.logo > h2 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: indianred;
+}
+
+nav a {
+  text-decoration: none;
+  line-height: 3;
+  color: white;
+  border-bottom: 1px solid gray;
+}
+
+@media screen and (min-width: 769px) {
+  header {
+    display: flex;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  nav {
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav a {
+    border-bottom: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  header {
+    display: flex;
+    padding: 30px;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .logo > h2 {
+    padding-top: 10px;
+  }
+
+  nav {
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav a {
+    font-size: 22px;
+  }
+}
