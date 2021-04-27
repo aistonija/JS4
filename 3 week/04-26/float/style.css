@@ -17,6 +17,31 @@
   margin-left: 1rem;
 }
 
-.text-center {
-  text-align: center;
+.clearfix {
+  clear: both;
+}
+
+/* ===================== */
+/* FLEX ITEMS */
+/* ===================== */
+
+.flex-items {
+  display: flex;
+  background-color: springgreen;
+  height: 500px;
+}
+
+.flex-items > .box {
+  background-color: steelblue;
+  padding: 30px;
+  flex: 1 1 200px;
+}
+
+.flex-items > .box:nth-child(2) {
+  background-color: thistle;
+}
+
+.box > p {
+  background-color: teal;
+  border: 2px solid black;
 }

@@ -1,0 +1,17 @@
+/* desktop first */
+
+body {
+  background-color: salmon;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: seagreen;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  body {
+    background-color: skyblue;
+  }
+}

@@ -1,0 +1,6 @@
+1. Header;
+2. About Section;
+3. Counter Banner (optional);
+4. Team Section;
+5. Contact Us;
+6. Footer (optional)

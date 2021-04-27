@@ -1,0 +1,58 @@
+/* default styles */
+
+.box {
+  margin: 50px auto;
+  border: 2px solid black;
+}
+
+.box1,
+.box2 {
+  width: 200px;
+  height: 200px;
+}
+
+.box1 {
+  background-color: slateblue;
+}
+
+.box2 {
+  background-color: thistle;
+}
+
+/* tablet view */
+@media screen and (min-width: 769px) {
+  .box1 {
+    width: 100px;
+    height: 100px;
+    background-color: thistle;
+  }
+
+  .box2 {
+    width: 400px;
+    height: 400px;
+    background-color: slateblue;
+  }
+}
+
+/* desktop view */
+@media screen and (min-width: 1024px) {
+  body {
+    text-align: center;
+  }
+
+  .box {
+    display: inline-block;
+  }
+
+  .box1 {
+    width: 400px;
+    height: 400px;
+    background-color: hotpink;
+  }
+
+  .box2 {
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+  }
+}

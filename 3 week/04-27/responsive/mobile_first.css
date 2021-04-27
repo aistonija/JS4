@@ -1,0 +1,45 @@
+/* mobile first approach */
+
+body {
+  background-color: aquamarine;
+}
+
+.wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  color: pink;
+  background-color: royalblue;
+  padding: 30px;
+}
+
+/* tablet view */
+@media screen and (min-width: 769px) {
+  body {
+    background-color: rosybrown;
+  }
+
+  .wrapper {
+    max-width: 800px;
+  }
+
+  h2 {
+    color: white;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: salmon;
+  }
+
+  .wrapper {
+    max-width: 1200px;
+  }
+}
+
+/* desktop first approach */
