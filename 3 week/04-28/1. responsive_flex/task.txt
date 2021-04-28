@@ -1,0 +1,19 @@
+1. Ekranas iki 349px - turi rasyti zinute - "jusu ekranas per mazas siam vaizdui" 
+
+DEFAULT VIEW - padding: 20px; bg-color
+
+2. Ekranas nuo 350px - turi atvaizduoti 6 box'us viena po kitu.
+
+3. Ekranas nuo 450px - turi atvaizduoti po 3 boxus eileje su tarpeliais tarp boxus
+
+4. Ekranas nuo 550px - kiekvienas boxas uzima pilna ploti, deliojasi vienas po kitu su tarpeliais apacioje
+
+5. ekranas nuo 769px - eileje po 2 boxus islygiuoti pagal tevo sonus.
+
+6. ekranas nuo 900px - visi boxai vienoje eileje su tarpeliais
+
+7. ekranas nuo 1050px - max container plotis 1050px, todel tempint ekrana container nebesiplecia, bet stovi centre, boxai toje pacioje pozicijoje
+
+8. ekranas nuo 1200px - zinute didelemis raidemis: deez nuts, 
+o boxu ekrane nebera. 
+

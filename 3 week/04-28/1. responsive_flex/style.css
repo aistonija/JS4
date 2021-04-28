@@ -1,0 +1,131 @@
+/* padarykite, kad jeigu ekranas yra mazesnis nei 349px rasytu zinute - jusu ekranas yra per mazas siem vaizdam */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+section {
+  padding: 20px;
+  background-color: lightpink;
+}
+
+.small-viewport {
+  text-align: center;
+}
+
+.small-viewport > h2 {
+  font-size: 5rem;
+}
+
+.normal-viewport,
+.extra-large-viewport {
+  display: none;
+}
+
+.box {
+  height: 100px;
+  border: 1px solid black;
+  margin: 0 auto 10px;
+  background-color: white;
+}
+
+/* default mobile view */
+
+@media only screen and (max-width: 350px) {
+}
+.small-viewport {
+  display: block;
+}
+
+/* 1st breakpoint 450px */
+
+@media only screen and (min-width: 450px) {
+  .small-viewport {
+    display: none;
+  }
+
+  .normal-viewport {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    width: 30%;
+  }
+}
+
+/* 2nd breakpoint 550px */
+
+@media only screen and (min-width: 550px) {
+  .normal-viewport {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+  }
+}
+
+/* 3rd breakpoint 769px */
+
+@media only screen and (min-width: 769px) {
+  .normal-viewport {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .box {
+    width: 49%;
+    margin: 0;
+    height: 200px;
+  }
+}
+
+/* 4th breakpoint 900px */
+
+@media only screen and (min-width: 900px) {
+  .normal-viewport {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
+
+/* 5th breakpoint 1050px */
+
+@media only screen and (min-width: 1050px) {
+  .normal-viewport {
+    max-width: 1050px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
+
+/* 6th breakpoint 1200px */
+
+@media only screen and (min-width: 1200px) {
+  .normal-viewport {
+    display: none;
+  }
+
+  .extra-large-viewport {
+    display: block;
+    text-align: center;
+  }
+
+  .extra-large-viewport > h2 {
+    font-size: 10rem;
+  }
+
+  .extra-large-viewport > img {
+    width: 500px;
+  }
+}
