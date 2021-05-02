@@ -1,0 +1,141 @@
+/* Mobile with: 320px - 768px */
+/* Tablet with: 769px - 1024px */
+/* Desktop with: 1025px an more */
+
+/* Global style */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+
+header {
+  background-color: rgb(191, 62, 39);
+  padding: 15px 0;
+}
+
+.header__logo {
+  font-size: 25px;
+  color: #fff;
+}
+
+/* Main nav */
+.main-nav {
+  margin: 30px 0;
+}
+
+.main-nav__item {
+  display: block;
+  font-size: 20px;
+  padding: 3px;
+  color: #fff;
+  background-color: rgb(113, 113, 237);
+  margin-bottom: 8px;
+  box-shadow: 3px 4px 10px gray;
+}
+.main-nav__item:hover {
+  background-color: rgb(85, 85, 235);
+}
+
+/* Main */
+
+.main {
+  margin: 30px 0;
+}
+
+.main__title {
+  margin-bottom: 15px;
+}
+
+.main__text {
+  text-align: justify;
+}
+
+/* Aside */
+
+.aside {
+  background-color: rgb(113, 113, 237);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 30px 0;
+}
+
+.aside-article {
+  margin-bottom: 10px;
+}
+
+.aside-article__title {
+  margin-bottom: 4px;
+}
+
+/* Footer */
+
+footer {
+  background-color: rgb(191, 62, 39);
+  color: #fff;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+/* Responsive desing */
+
+/* tablet view */
+@media screen and (min-width: 769px) {
+  /* galioja viskam nuo 769 iki max */
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-nav {
+    flex-basis: 30%;
+    padding-right: 20px;
+  }
+
+  .main {
+    flex-basis: 70%;
+  }
+
+  .aside {
+    flex-grow: 1;
+  }
+}
+
+/* Desktop View */
+@media screen and (min-width: 1025px) {
+  .header__logo {
+    font-size: 2em;
+  }
+  .main-nav {
+    flex-basis: 15%;
+    padding-right: 20px;
+  }
+
+  .main {
+    flex-basis: 50%;
+    padding-right: 20px;
+  }
+
+  .aside {
+    flex-basis: 30%;
+  }
+}

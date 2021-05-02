@@ -1,0 +1,42 @@
+.section-1 {
+  padding: 30px 10px;
+  background-color: thistle;
+}
+
+.img-container {
+  padding: 10px;
+  background-color: wheat;
+  height: 100px;
+}
+
+.border-layer {
+  padding: 10px;
+  background-color: rgb(247, 243, 207);
+  height: 100%;
+}
+
+.text-content > p {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 10px;
+  background-color: white;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 4px gray;
+  cursor: pointer;
+  background-color: hotpink;
+}
+
+.btn > a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to top, rgb(230, 86, 158), hotpink);
+}
