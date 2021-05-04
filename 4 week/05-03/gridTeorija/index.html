@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 10% 30% 1fr;
+        grid-template-rows: 200px;
+      }
+
+      h1 {
+        margin: 0;
+        background-color: brown;
+      }
+
+      .header {
+        background-color: burlywood;
+      }
+
+      .nav {
+        background-color: cadetblue;
+      }
+
+      .grid-container {
+        /* border: 1px solid black; */
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: repeat(4, 25vw);
+        grid-auto-rows: 25vw;
+        gap: 10px;
+      }
+
+      .grid-item {
+        padding: 20px;
+        background-color: lightcoral;
+      }
+
+      .gt-1 {
+        background-color: lightgreen;
+        grid-column: 1 / -1;
+        grid-row: 1 / span 3;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <header>
+      <h1>Title</h1>
+      <div class="header">Header</div>
+      <div class="nav">Navigation</div>
+    </header> -->
+    <div class="grid-container">
+      <div class="grid-item gt-1">Item1</div>
+      <div class="grid-item gt-2">Item2</div>
+      <div class="grid-item gt-3">Item1</div>
+      <div class="grid-item gt-4">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+      <div class="grid-item">Item1</div>
+      <div class="grid-item">Item2</div>
+    </div>
+  </body>
+</html>

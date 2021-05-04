@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      .bg-tomato {
+        background-color: tomato;
+      }
+
+      .flex {
+        height: 400px;
+        width: 1000px;
+        margin: 0 auto;
+        gap: 10px;
+        display: flex;
+      }
+
+      .flex-item {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .block {
+        height: 50%;
+        display: flex;
+        gap: 10px;
+      }
+
+      .sm-block {
+        flex: 1;
+      }
+
+      /* grid */
+
+      .bg-blue {
+        background-color: skyblue;
+      }
+
+      .grid {
+        height: 400px;
+        width: 1000px;
+        margin: 0 auto;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flex</h2>
+    <div class="flex">
+      <div class="flex-item bg-tomato"></div>
+      <div class="flex-item">
+        <div class="block bg-tomato"></div>
+        <div class="block">
+          <div class="sm-block bg-tomato"></div>
+          <div class="sm-block bg-tomato"></div>
+        </div>
+      </div>
+    </div>
+    <h2>Grid</h2>
+    <div class="grid">
+      <div class="gt-1 bg-blue"></div>
+      <div class="gt-2 bg-blue"></div>
+      <div class="gt-3 bg-blue"></div>
+      <div class="gt-4 bg-blue"></div>
+    </div>
+  </body>
+</html>

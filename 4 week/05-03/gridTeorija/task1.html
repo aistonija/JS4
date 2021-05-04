@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 920px;
+        margin: 0 auto;
+      }
+
+      .grid-task-container {
+        margin: 100px auto;
+        display: grid;
+        border: 1px solid black;
+        background-color: skyblue;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 250px;
+        padding: 10px;
+        justify-items: center;
+      }
+
+      .grid-task {
+        display: grid;
+        width: 250px;
+        height: 250px;
+        gap: 10px;
+      }
+
+      .grid-task--1 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      }
+      .grid-task--2 {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+      }
+      .grid-task--3 {
+        grid-template-columns: 3fr 1fr 2fr 2fr 1fr 3fr;
+        grid-template-rows: repeat(4, 1fr);
+      }
+
+      .bg-grey {
+        background-color: slategrey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-task-container">
+        <div class="grid-task grid-task--1">
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+        </div>
+        <div class="grid-task grid-task--2">
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+        </div>
+        <div class="grid-task grid-task--3">
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+          <div class="bg-grey"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
