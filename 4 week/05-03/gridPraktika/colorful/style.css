@@ -1,0 +1,128 @@
+.container {
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+  display: grid;
+  /* background-color: black; */
+  grid-gap: 10px;
+  padding-right: 9px;
+  border: 1px black solid;
+  grid-template-columns: 2fr 3fr 4fr 1fr 2fr;
+  grid-template-rows: 3fr 1fr 4fr 2fr 3fr 1fr 2fr;
+}
+
+.white {
+  background-color: hotpink;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: rgb(79, 79, 255);
+}
+
+.gridItem1 {
+  grid-area: 1/1/2/2;
+}
+
+.gridItem2 {
+  grid-area: 1/2/2/3;
+}
+
+.gridItem3 {
+  grid-area: 1/3/2/4;
+}
+
+.gridItem4 {
+  grid-area: 1/4/2/5;
+}
+
+.gridItem5 {
+  grid-area: 2/1/3/2;
+}
+
+.gridItem6 {
+  grid-area: 2/2/3/3;
+}
+
+.gridItem7 {
+  grid-area: 2/3/3/4;
+}
+
+.gridItem8 {
+  grid-area: 2/4/3/5;
+}
+
+.gridItem9 {
+  grid-area: 3/2/6/3;
+}
+
+.gridItem10 {
+  grid-area: 3/3/4/4;
+}
+
+.gridItem11 {
+  grid-area: 3/4/4/5;
+}
+
+.gridItem12 {
+  grid-area: 5/1/6/2;
+}
+
+.gridItem13 {
+  grid-area: 4/3/6/4;
+}
+
+.gridItem14 {
+  grid-area: 4/4/6/5;
+}
+
+.gridItem15 {
+  grid-area: 6/1/7/2;
+}
+
+.gridItem16 {
+  grid-area: 6/2/7/4;
+}
+
+.gridItem17 {
+  grid-area: 7/1/8/2;
+}
+
+.gridItem18 {
+  grid-area: 7/2/8/3;
+}
+
+.gridItem19 {
+  grid-area: 7/3/8/4;
+}
+
+.gridItem20 {
+  grid-area: 7/4/8/5;
+}
+
+.gridItem21 {
+  grid-area: 1/5/2/6;
+}
+
+.gridItem22 {
+  grid-area: 2/5/3/6;
+}
+
+.gridItem23 {
+  grid-area: 3/5/6/6;
+}
+
+.gridItem24 {
+  grid-area: 6/5/7/6;
+}
+
+.gridItem25 {
+  grid-area: 7/5/8/6;
+}
