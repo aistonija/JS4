@@ -1,0 +1,105 @@
+/* Grid areas užduotis */
+
+.grid-areas-task-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin: 5rem 0;
+}
+.text-center {
+  text-align: center;
+}
+
+.content-center {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-task {
+  width: 10%;
+}
+.tablet-task {
+  width: 30%;
+}
+.desktop-task {
+  width: 50%;
+}
+
+.mobile-grid {
+  display: grid;
+  width: 100%;
+  height: 900px;
+  grid-template:
+    "header" 80px
+    "menu" 1fr
+    "hero" 3fr
+    "main" 3fr
+    "banner" 2fr
+    "extra" 2fr
+    "image" 2fr
+    /1fr;
+}
+
+.tablet-grid {
+  display: grid;
+  width: 100%;
+  height: 900px;
+  grid-template:
+    "header header header" 80px
+    "hero hero hero" 4fr
+    "menu main main" 3fr
+    "menu banner banner" 2fr
+    "menu extra image" 2fr
+    /1fr 2fr 1fr;
+}
+
+.desktop-grid {
+  display: grid;
+  width: 100%;
+  height: 900px;
+  grid-template:
+    "header menu menu menu" 80px
+    "hero hero hero hero" 8fr
+    "main main . image" 3fr
+    "main main . extra" 2fr
+    "banner banner banner banner" 2fr
+    / 1fr 1fr 1fr 1fr;
+}
+
+.header-container {
+  grid-area: header;
+  background: rgb(24, 24, 24);
+  color: white;
+}
+.menu-container {
+  grid-area: menu;
+  background: rgb(255, 72, 87);
+  color: white;
+}
+.hero-container {
+  grid-area: hero;
+  background: rgb(117, 154, 255);
+  color: white;
+}
+.main-container {
+  grid-area: main;
+  background: rgb(0, 0, 56);
+  color: white;
+}
+.banner-container {
+  grid-area: banner;
+  background: rgb(240, 204, 2);
+  color: black;
+}
+.extra-container {
+  grid-area: extra;
+  background: rgb(37, 206, 169);
+  color: black;
+}
+.image-container {
+  grid-area: image;
+  background: rgb(211, 255, 255);
+  color: black;
+}
