@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.layout-container {
+  background-color: #494399;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main-img"
+    "form"
+    "footer";
+}
+
+.wider-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+header {
+  height: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  grid-area: header;
+}
+
+.logo > span {
+  color: lightgray;
+  font-size: 1.5rem;
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu > i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.socials > img {
+  width: 20px;
+  margin: 0 5px;
+  box-shadow: 0 2px 4px rgb(53, 53, 53);
+}
+
+.hero {
+  grid-area: main-img;
+  background-color: #72efe9;
+  height: 300px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.inner-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero > .inner-container {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  position: absolute;
+  top: 50px;
+  transform: translateX(-50%);
+}
+
+.form {
+  grid-area: form;
+  margin-top: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input:not(input[type="submit"]),
+textarea {
+  background-color: transparent;
+  padding: 20px 10px;
+  border: none;
+  border-bottom: 5px solid lightgray;
+  color: lightgray;
+}
+
+::placeholder {
+  color: lightgray;
+  font-size: 1.1rem;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="submit"] {
+  background-color: #2cccc4;
+  margin-top: 20px;
+  border: none;
+  padding: 15px 10px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+input[type="submit"]:hover {
+  background-color: transparent;
+}
+
+.info {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.info > span,
+.link {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.link:hover {
+  color: lightgray;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+footer p {
+  margin-bottom: 50px;
+}
+
+footer span a {
+  color: #259bca;
+}
+footer span a:hover {
+  color: #a1a1a1;
+}
+
+@media screen and (min-width: 768px) {
+  .layout-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "main-img form"
+      "footer footer";
+  }
+
+  header {
+    grid-template-columns: 4fr 50px 100px;
+  }
+
+  header.wider-container {
+    width: 90%;
+  }
+
+  .hero.wider-container {
+    width: 60%;
+    margin-left: 10%;
+  }
+
+  .hero > .inner-container {
+    width: 100%;
+  }
+
+  .hero {
+    margin-top: 0;
+    background-color: #72efe9;
+    height: 100%;
+    text-align: center;
+  }
+
+  .hero img {
+    height: 450px;
+    width: 120%;
+    transform: translate(-25%, -3%);
+  }
+
+  form.inner-container {
+    margin: 0;
+  }
+}

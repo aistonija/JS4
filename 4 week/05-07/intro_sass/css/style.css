@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__links, .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border: 2px solid red;
+}
+
+.box1 {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.box2 {
+  -webkit-transform: rotate(80deg);
+  -ms-transform: rotate(80deg);
+  transform: rotate(80deg);
+}
+
+.navbar {
+  background-color: #1f42c3;
+  height: 80px;
+  padding: 15px;
+}
+.navbar a {
+  color: #a1a1a1;
+  font-size: 2rem;
+}
+.navbar__logo {
+  height: 100%;
+  width: 30%;
+}
+.navbar__logo a {
+  font-size: 2.5rem;
+}
+.navbar__logo a:hover {
+  color: #fff;
+}
+.navbar__links {
+  width: 50%;
+  align-items: center;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

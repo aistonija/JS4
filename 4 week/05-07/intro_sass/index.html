@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sass Intro</title>
+  </head>
+  <body>
+    <header>
+      <!-- navigacijos juosta su BEM -->
+      <!-- vienoje puseje logo, kitoje puseje 3 linkai vietoj menu bar -->
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <a href="#">logo</a>
+        </div>
+        <ul class="navbar__links">
+          <li class="navbar__link">
+            <a href="#" class="navbar__item">Home</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#" class="navbar__item">Services</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#" class="navbar__item">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- example for mixins -->
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+    </main>
+  </body>
+</html>

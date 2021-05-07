@@ -1,0 +1,109 @@
+// old version with plain css
+// :root {
+//   --bg-blue: #1f42c3;
+// }
+
+// new version with sass
+$bright-blue: #1f42c3;
+$main-bg-blue: #304cae;
+$hotpink: #f53978;
+$p-color: #111111;
+$nav-text-color: #a1a1a1;
+$white-color: #fff;
+$footer: #333333;
+
+// globals
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// extend
+%justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+%align-items {
+  display: flex;
+  align-items: center;
+}
+
+// =========================
+// mixins example start
+// =========================
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+@mixin size($value) {
+  width: $value;
+  height: $value;
+}
+
+.box {
+  @include size(300px);
+  border: 2px solid red;
+}
+
+.box1 {
+  @include transform(rotate(30deg));
+}
+
+.box2 {
+  @include transform(rotate(80deg));
+}
+
+// =========================
+// mixins example end
+// =========================
+
+// navigation
+.navbar {
+  //   all link tags within navbar
+  a {
+    color: $nav-text-color;
+    font-size: 2rem;
+  }
+
+  background-color: $bright-blue;
+  height: 80px;
+  padding: 15px;
+  @extend %justify-between;
+
+  //   navbar logo
+  &__logo {
+    height: 100%;
+    width: 30%;
+
+    // logo anchor tag
+    a {
+      font-size: 2.5rem;
+
+      &:hover {
+        color: $white-color;
+      }
+    }
+  }
+
+  //   navbar links
+  &__links {
+    width: 50%;
+    @extend %justify-between;
+    align-items: center;
+    list-style: none;
+
+    a {
+    }
+  }
+}
+
+// all anchor tags
+a {
+  text-decoration: none;
+}
