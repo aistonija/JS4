@@ -1,0 +1,50 @@
+.grid-gallery {
+  position: absolute;
+  top: -200px;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-areas:
+    "grapes apples apricots"
+    "pumpkins spinach veggies";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 350px);
+  gap: 30px;
+}
+
+.img {
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(199, 227, 227, 0.27);
+  background-blend-mode: color;
+}
+
+.img-grapes {
+  background-image: url(https://ripe.london/wp-content/uploads/2017/11/grapes.jpg);
+  grid-area: grapes;
+}
+
+.img-apples {
+  background-image: url(https://snaped.fns.usda.gov/sites/default/files/styles/crop_ratio_7_5/public/seasonal-produce/2018-05/apples_2.jpg?h=65b39431&itok=MoJheg5x);
+  grid-area: apples;
+}
+
+.img-apricots {
+  background-image: url(https://cdn.britannica.com/33/108033-050-ABFF88E7/apricots.jpg);
+  grid-area: apricots;
+}
+
+.img-pumpkins {
+  background-image: url(https://cdn.agrilifetoday.tamu.edu/wp-content/uploads/2020/10/pumpkin.jpeg);
+  grid-area: pumpkins;
+}
+
+.img-spinach {
+  background-image: url(https://eadn-wc02-739306.nxedge.io/cdn/wp-content/uploads/2020/05/iStock-916931074-2-scaled.jpg);
+  grid-area: spinach;
+}
+
+.img-veggies {
+  background-image: url(https://cdn.britannica.com/17/196817-050-6A15DAC3/vegetables.jpg);
+  grid-area: veggies;
+}

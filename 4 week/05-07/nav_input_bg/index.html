@@ -10,33 +10,65 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="gallery.css" />
+
     <title>Input Icon</title>
   </head>
   <body>
     <header>
-      <nav class="navbar1">
+      <div class="container">
+        <!-- navbar with positioned input and search icon -->
+        <!-- <nav class="navbar navbar-positioned">
         <div class="navbar-logo">
           <a href="#">logo</a>
         </div>
-        <!-- forma -->
         <form>
           <input type="search" placeholder="search..." />
           <i class="fas fa-search"></i>
         </form>
-      </nav>
+      </nav> -->
 
-      <!--  -->
+        <!-- navbar with background icon -->
 
-      <nav class="navbar2">
-        <div class="navbar-logo">
-          <a href="#">logo</a>
+        <nav class="navbar navbar-bg-img">
+          <div class="navbar-logo">
+            <a href="#">logo</a>
+          </div>
+          <form>
+            <input type="search" placeholder="search..." />
+          </form>
+        </nav>
+        <div class="hero">
+          <h1 class="main-title">seasonal fruits & veg</h1>
+          <div class="border-bottom"></div>
+          <p class="main-description">
+            Organic food is food produced by methods that comply with the
+            standards of organic farming.
+          </p>
         </div>
-        <!-- forma -->
-        <form>
-          <input type="search" placeholder="search..." />
-        </form>
-      </nav>
+      </div>
     </header>
+    <main class="container">
+      <div class="grid-gallery">
+        <div class="img img-grapes"></div>
+        <div class="img img-apples"></div>
+        <div class="img img-apricots"></div>
+        <div class="img img-pumpkins"></div>
+        <div class="img img-spinach"></div>
+        <div class="img img-veggies"></div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+        dolorem?
+      </p>
+    </footer>
   </body>
 </html>
