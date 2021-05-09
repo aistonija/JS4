@@ -1,16 +1,19 @@
-// old version with plain css
-// :root {
-//   --bg-blue: #1f42c3;
-// }
+@import "variables";
+@import "mixins";
+@import "extends";
+@import "media";
 
-// new version with sass
-$bright-blue: #1f42c3;
-$main-bg-blue: #304cae;
-$hotpink: #f53978;
-$p-color: #111111;
-$nav-text-color: #a1a1a1;
-$white-color: #fff;
-$footer: #333333;
+.container,
+.main__container {
+  @include container-width(920px);
+
+  @include tablet {
+    @include container-width(720px);
+  }
+  @include mobile {
+    @include container-width(420px);
+  }
+}
 
 // globals
 
@@ -18,50 +21,13 @@ $footer: #333333;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-// extend
-%justify-between {
-  display: flex;
-  justify-content: space-between;
+header {
+  background-color: $bright-blue;
 }
-
-%align-items {
-  display: flex;
-  align-items: center;
-}
-
-// =========================
-// mixins example start
-// =========================
-
-@mixin transform($property) {
-  -webkit-transform: $property;
-  -ms-transform: $property;
-  transform: $property;
-}
-
-@mixin size($value) {
-  width: $value;
-  height: $value;
-}
-
-.box {
-  @include size(300px);
-  border: 2px solid red;
-}
-
-.box1 {
-  @include transform(rotate(30deg));
-}
-
-.box2 {
-  @include transform(rotate(80deg));
-}
-
-// =========================
-// mixins example end
-// =========================
 
 // navigation
 .navbar {
@@ -69,16 +35,17 @@ $footer: #333333;
   a {
     color: $nav-text-color;
     font-size: 2rem;
+
+    &:hover {
+      color: $blackish;
+    }
   }
 
-  background-color: $bright-blue;
   height: 80px;
-  padding: 15px;
-  @extend %justify-between;
+  @extend %between-centered;
 
   //   navbar logo
   &__logo {
-    height: 100%;
     width: 30%;
 
     // logo anchor tag
@@ -91,14 +58,25 @@ $footer: #333333;
     }
   }
 
+  // menu bars
+  &__menu {
+    display: none;
+
+    @include mobile {
+      display: block;
+      color: $nav-text-color;
+      font-size: 1.5rem;
+    }
+  }
+
   //   navbar links
   &__links {
     width: 50%;
-    @extend %justify-between;
-    align-items: center;
+    @extend %between-centered;
     list-style: none;
 
-    a {
+    @include mobile {
+      display: none;
     }
   }
 }
@@ -107,3 +85,124 @@ $footer: #333333;
 a {
   text-decoration: none;
 }
+
+// main
+
+main {
+  background-color: $main-bg-blue;
+  position: relative;
+
+  .divider {
+    background-color: $hotpink;
+    position: absolute;
+    top: 300px;
+    height: 200px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+
+    @include tablet {
+      top: 500px;
+    }
+  }
+}
+
+.main {
+  padding: 50px 0;
+  position: relative;
+
+  &__content {
+    color: $white-color;
+    text-align: center;
+    margin-bottom: 50px;
+
+    &__title {
+      text-transform: capitalize;
+      font-size: 4em;
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      font-size: 1.2em;
+      font-style: italic;
+      padding: 0 50px;
+      line-height: 1.5;
+    }
+  }
+
+  &__services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gtid-auto-rows: auto;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gtid-auto-rows: auto;
+    }
+
+    &__card {
+      flex: 1;
+      background-color: $white-color;
+      padding: 20px 30px;
+
+      img {
+        width: 100%;
+      }
+
+      h2 {
+        color: $hotpink;
+        margin-bottom: 30px;
+        font-weight: 800;
+      }
+
+      p {
+        line-height: 1.5;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+      }
+
+      a.btn {
+        display: inline-block;
+        background-color: $bright-blue;
+        color: $white-color;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 10px 15px;
+
+        &:hover {
+          background-color: $hotpink;
+        }
+      }
+    }
+  }
+
+  .freepik {
+    padding-top: 50px;
+    text-align: center;
+    color: $white-color;
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+
+      &:hover {
+        color: $nav-text-color;
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  color: white;
+  padding: 50px;
+  background-color: $blackish;
+}
+
+// common

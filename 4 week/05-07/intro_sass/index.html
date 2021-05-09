@@ -4,34 +4,85 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Sass Intro</title>
   </head>
   <body>
     <header>
-      <!-- navigacijos juosta su BEM -->
-      <!-- vienoje puseje logo, kitoje puseje 3 linkai vietoj menu bar -->
-      <nav class="navbar">
-        <div class="navbar__logo">
-          <a href="#">logo</a>
-        </div>
-        <ul class="navbar__links">
-          <li class="navbar__link">
-            <a href="#" class="navbar__item">Home</a>
-          </li>
-          <li class="navbar__link">
-            <a href="#" class="navbar__item">Services</a>
-          </li>
-          <li class="navbar__link">
-            <a href="#" class="navbar__item">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="navbar">
+          <div class="navbar__logo">
+            <a href="#">logo</a>
+          </div>
+          <a href="/" class="navbar__menu"><i class="fas fa-bars"></i></a>
+          <ul class="navbar__links">
+            <li class="navbar__link">
+              <a href="#" class="navbar__item">Home</a>
+            </li>
+            <li class="navbar__link">
+              <a href="#" class="navbar__item">Services</a>
+            </li>
+            <li class="navbar__link">
+              <a href="#" class="navbar__item">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <!-- example for mixins -->
-      <div class="box box1"></div>
-      <div class="box box2"></div>
+      <div class="divider"></div>
+      <div class="main main__container">
+        <div class="main__content">
+          <h1 class="main__content__title">marketing services</h1>
+          <p class="main__content__description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque a
+            alias natus soluta rem provident quo, fugit totam ipsam quibusdam
+            ducimus quod fuga magnam, odit dolorum eligendi!
+          </p>
+        </div>
+        <div class="main__services">
+          <div class="main__services__card">
+            <img src="img/marketing.jpg" alt="" />
+            <h2>Marketing</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+              reprehenderit.
+            </p>
+            <a href="/" class="btn">learn more</a>
+          </div>
+          <div class="main__services__card">
+            <img src="img/development.jpg" alt="" />
+            <h2>Development</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+              reprehenderit.
+            </p>
+            <a href="/" class="btn">learn more</a>
+          </div>
+          <div class="main__services__card">
+            <img src="img/marketing.jpg" alt="" />
+            <h2>Advertisement</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+              reprehenderit.
+            </p>
+            <a href="/" class="btn">learn more</a>
+          </div>
+        </div>
+        <p class="freepik">Images from <a href="/">Freepik</a></p>
+      </div>
     </main>
+    <footer>
+      <small
+        >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis,
+        mollitia!</small
+      >
+    </footer>
   </body>
 </html>
