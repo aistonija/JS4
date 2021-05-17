@@ -138,9 +138,10 @@ if (population > 33) {
 8.1. Declare a variable 'numNeighbours' based on a prompt input like this: prompt('How many neighbour countries does your country have?');
 */
 
-const numNeighbours = prompt(
-  "How many neighbour countries does your country have?"
-);
+const numNeighbours = 5;
+// const numNeighbours = prompt(
+//   "How many neighbour countries does your country have?"
+// );
 
 // 8.2. If there is only 1 neighbour, log to the console 'Only 1 border!'(use loose equality == for now)
 
@@ -209,3 +210,44 @@ if (language === "english" && population < 50 && isIsland === false) {
 } else {
   console.log(`${country} does not meet your criteria 😥`);
 }
+
+// 10. If your country's population is greater than 33 million, use the ternary operator to log a string like this to the console: 'Portugal's population is above average'. Otherwise, simply log 'Portugal's population is below average'. Notice how onlyone word changes between these two sentences!
+
+// 10.2. After checking the result, change the population temporarily to 13 and then to 130. See the different results, and set the population back to original
+
+//
+let result = population > 33 ? "above" : "below";
+console.log(`${country}'s population is ${result} average`);
+
+//
+console.log(
+  `${country}'s population is ${population > 33 ? "above" : "below"} average`
+);
+
+//-----------------------------------------------------//
+
+/*
+Use a switch statement to log the following string for the given 'language':
+chinese or mandarin: 'MOST number of native speakers!'
+spanish: '2nd place in number of native speakers'
+english: '3rd place'
+hindi: 'Number 4'arabic: '5th most spoken language'
+for all other simply log 'Great language too :D
+*/
+let lang = "mandarin";
+let whichLanguage;
+
+switch (lang) {
+  case "chinese":
+  case "mandarin": // if (language === 'chinese'){}
+    whichLanguage = "MOST number of native speakers!";
+    break;
+  case "spanish":
+    whichLanguage = "2nd place in number of native speakers";
+    break;
+  case "english":
+    whichLanguage = "3rd place";
+    break;
+}
+
+console.log(whichLanguage);
