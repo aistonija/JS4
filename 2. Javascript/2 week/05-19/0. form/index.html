@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <input class="firstName" type="text" placeholder="Enter Your Name" />
+      <input class="number" type="number" placeholder="Enter Number" />
+      <input class="pass" type="text" placeholder="Write something funny" />
+      <input type="submit" value="Send" />
+    </form>
+    <h1></h1>
+    <!-- <script src="script.js"></script> -->
+    <script>
+      const form = document.querySelector("form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // console.log(e);
+      });
+
+      const firstName = document.querySelector(".firstName");
+      const pass = document.querySelector(".pass");
+      const number = document.querySelector(".number");
+      // console.log(firstName);
+
+      firstName.addEventListener("blur", () => {
+        firstName.style.backgroundColor = "green";
+        console.log("hey");
+      });
+
+      number.addEventListener("focus", () => {
+        number.style.backgroundColor = "hotpink";
+        console.log("kukuku");
+      });
+
+      // keydown
+      // keyup
+      pass.addEventListener("keyup", () => {
+        console.log(pass.value);
+      });
+    </script>
+  </body>
+</html>
