@@ -18,6 +18,7 @@ gridContainer.addEventListener("mouseleave", () => {
 // Get all cells
 const cells = document.querySelectorAll(".cell");
 
+// Sukam cikla per visus grid-itemus, ir kiekvienam dedam po listeneri
 for (let i = 0; i < cells.length; i++) {
   const eachCell = cells[i];
 
@@ -28,4 +29,19 @@ for (let i = 0; i < cells.length; i++) {
   eachCell.addEventListener("mouseleave", () => {
     eachCell.style.outline = "none";
   });
+
+  eachCell.addEventListener("click", () => {
+    // console.log(eachCell.style.backgroundColor);
+
+    if (eachCell.style.backgroundColor) {
+      eachCell.style.backgroundColor = "";
+    } else {
+      eachCell.style.backgroundColor = `rgb(${randNum()}, ${randNum()}, ${randNum()})`;
+    }
+  });
+}
+
+// background-color: rgb(255, 255, 255);
+function randNum() {
+  return Math.floor(Math.random() * 256);
 }
