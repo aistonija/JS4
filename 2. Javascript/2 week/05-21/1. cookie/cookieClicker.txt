@@ -1,0 +1,57 @@
+
+
+
+
+
+/* ---------------------------------------- */
+
+1. Pasirašome HTML. 
+
+--> Game Container blokas, kuriame: 
+--> Susikurti 3 blokus - jie reprezentuos skirtingus vaizdus (tačiau viskas vyks viename psl - index.html)
+1. START PAGE - MYGTUKAI: CHANGE BG IR START GAME;
+2. GAME PAGE - SCORE: ; SAUSAINIO NUOTRAUKA; MYGTUKAS GO TO SHOP;
+3. SHOP PAGE - MYGTUKAS GO BACK TO GAME; + 4 MYGTUKAI APSIPIRKIMUI;
+
+
+/* ---------------------------------------- */
+
+2. Su CSS susitvarkome pradinį vaizdą: t.y. pradžioje matome tik start page, tačiau viską išcentruojame, sutvarkome dydžius, apsirašome mygtukus (sukuriame jiems id/klases, juos pasiimsime su JS).
+
+
+/* ---------------------------------------- */
+
+3. Su JS apsirašome logiką.
+
+1. start page - jame yra mygtukas (Start), kurį paspaudus mums rodomas žaidimo vaizdas, o start mygtukas neberodomas;
+
+2. game page:
+    - jame yra užrašas score, kuris keisis kiekvieną kartą paspaudus ant sausainio;
+    - sausainio nuotrauka, kurią spaudinėsime, kad rinktume taškus;
+    - užvedus pelyte ant sausainio nuotraukos - ji padidėja 1.2 karto, pelytę patraukus sumažėja iki originalios. Aprašoma per JS.
+    - mygtukas shop, kurį paspaudus bus atvaizduojama "parduotuvė", tuo tarpu sausainis nebėra atvaizduojamas;
+
+3. shop page: jame yra nurodomas bendras surinktų taškų kiekis, ir keli pasirinkimai: 
+    - mygtukas BACK - paspaudus vėl atvaizduojamas game page;
+    - mygtukas MAKE COOKIE SPIN. COST 20 POINTS;
+    - mygtukas ADD TWO POINTS ON CLICK. COST 100 POINTS;
+    - mygtukas ADD FIVE POINTS ON CLICK. COST 300 POINTS;
+    - mygtukas CHANGE COOKIE IMAGE TO NEW ONE. COST 150 POINTS;
+
+    
+/* ---------------------------------------- */
+
+4. 
+    - Iš pradžių už 1 click'ą duodama po 1 tašką. 
+    - surinkus tam tikrą taškų sumą galima nusipirkti "features":
+        -- sausainio sukimąsi (kainuoja 20pts);
+        -- 2 taškus už 1 click'ą (kainuoja 100pts);
+        -- 5 taškus už 1 click'ą (kainuoja 300pts);
+        -- naują sausainį (kitą vaizdą) (kainuoja 150pts);
+
+    - atliekant pirkimus visada patikriname ar yra surinktas užtektinas points kiekis, jei taip - vykdome komandą (nuskaičiuojame pinigus, pritaikome savybes, perrašome taškų skaičiavimą), jei neužtenka taškų -  alert, kad neužtenka taškų. 
+
+    - sugalvoti savo upgrade, kurį galima nusipirkti parduotuvėje.
+
+    
+     
