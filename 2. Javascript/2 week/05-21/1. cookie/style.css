@@ -3,10 +3,12 @@
 }
 
 body {
-  background-color: honeydew;
+  background-color: lightpink;
 }
 
 .gameContainer {
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgb(121, 121, 121);
   width: 60%;
   margin: 100px auto;
   padding: 50px;
@@ -16,6 +18,12 @@ body {
 img {
   width: 50%;
   margin-bottom: 50px;
+}
+
+#cookie {
+  transition: 500ms;
+
+  border-radius: 50%;
 }
 
 .gameContainer > div {
@@ -35,6 +43,7 @@ button {
 #gamePage {
   display: none;
 }
+
 #shopPage {
   display: none;
 }
