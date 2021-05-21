@@ -22,8 +22,12 @@ img {
 
 #cookie {
   transition: 500ms;
-
   border-radius: 50%;
+}
+
+.scoreText {
+  display: none;
+  text-align: center;
 }
 
 .gameContainer > div {
@@ -46,4 +50,21 @@ button {
 
 #shopPage {
   display: none;
+}
+
+/* spinner */
+.rotate {
+  animation-name: spinner;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
