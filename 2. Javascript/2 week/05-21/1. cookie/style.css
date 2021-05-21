@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: honeydew;
+}
+
+.gameContainer {
+  width: 60%;
+  margin: 100px auto;
+  padding: 50px;
+  background-color: white;
+}
+
+img {
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.gameContainer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* states */
+
+#gamePage {
+  display: none;
+}
+#shopPage {
+  display: none;
+}
