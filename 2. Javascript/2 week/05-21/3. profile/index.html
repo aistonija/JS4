@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style>
+      .card {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- form -->
+      <form>
+        <input type="url" placeholder="Insert Image Url" name="imgUrl" />
+        <input type="text" placeholder="Enter Your Name" name="fName" />
+        <input type="number" placeholder="Enter Your Age" name="age" />
+
+        <!-- radio input -->
+        <div>
+          <h3>Your Gender:</h3>
+          <label for="female">Female:</label>
+          <input type="radio" id="female" name="gender" value="Alpha Female" />
+          <label for="male">Male:</label>
+          <input type="radio" id="male" name="gender" value="Alpha Male" />
+          <label for="other">Other:</label>
+          <input type="radio" id="other" name="gender" value="IDK" />
+        </div>
+
+        <!-- select -->
+        <div>
+          <label for="relationship">Relationship status:</label>
+          <select name="relationship" id="relationship">
+            <option value="">select:</option>
+            <option value="1">Single and ready to mingle</option>
+            <option value="2">Happily married</option>
+            <option value="3">I'd rather not say</option>
+          </select>
+        </div>
+
+        <!-- textarea -->
+        <textarea
+          name="aboutMeMessage"
+          id="textAboutMe"
+          placeholder="few things about me"
+        ></textarea>
+
+        <button type="submit">Print My Card</button>
+      </form>
+      <!-- card to print -->
+      <div class="card">
+        <img class="myPhoto" src="" alt="" />
+        <h2 class="myName"></h2>
+        <p class="myAge"></p>
+        <p class="myGender"></p>
+        <p class="myStatus"></p>
+        <p class="aboutMe"></p>
+      </div>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>
