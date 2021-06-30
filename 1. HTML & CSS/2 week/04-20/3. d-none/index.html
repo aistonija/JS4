@@ -9,7 +9,7 @@
   </head>
   <body>
     <section>
-      <div>
+      <!-- <div>
         <h3>Just Display</h3>
         <div class="border">
           <img
@@ -38,14 +38,14 @@
               alt=""
           /></a>
         </div>
-      </div>
+      </div> -->
 
       <div class="background">
         <div class="background-layer">
           <h3>Ar užuodžiate pavasarį?</h3>
         </div>
       </div>
-    </section>
+    <!-- </section>
     <button id="change" style="cursor: pointer">Display</button>
     <div class="js-photo border" style="padding: 10px">
       <img
@@ -53,13 +53,12 @@
         src="https://cdn1.matadornetwork.com/blogs/1/2011/05/greece-1200x853.jpg"
         alt=""
       />
-    </div>
+    </div> -->
 
     <script>
       const button = document.getElementById("change");
 
-      button.addEventListener("click", myScript);
-      function myScript() {
+      button.addEventListener("click", function () {
         const img = document.getElementById("photo");
 
         if (img.style.display === "none") {
@@ -67,7 +66,7 @@
         } else {
           img.style.display = "none";
         }
-      }
+      });
     </script>
   </body>
 </html>

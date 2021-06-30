@@ -34,7 +34,6 @@
 .icon-container {
   height: 1.5rem;
   width: 1.5rem;
-  border: 1px solid #000;
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
   display: flex;
@@ -43,12 +42,12 @@
   margin: 5px;
 }
 
-.icon-container--fb:hover {
-  background: #38529a;
+.icon-container--fb:hover .fa-facebook-square {
+  color: #38529a;
 }
 
-.icon-container--in:hover {
-  background: #0073b1;
+.icon-container--in:hover .fa-linkedin {
+  color: #0073b1;
 }
 
 .icons {

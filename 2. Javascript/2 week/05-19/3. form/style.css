@@ -1,0 +1,29 @@
+/* body {
+  background: linear-gradient(to left, #ffa7b4, #ffb6c1, #fdc2cb, #fcd3d9);
+  height: 100vh;
+} */
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+form {
+  padding: 50px;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+}
+
+ol {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+li {
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
